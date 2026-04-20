@@ -3,37 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About · Aditya Anand</title>
-  <style>
-    body { margin: 0; padding: 36px; font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.55; color: #111; background: #fff; }
-    a { color: #0645ad; }
-    .layout { display: flex; align-items: flex-start; gap: 80px; max-width: 1200px; }
-    .nav { width: 180px; flex: 0 0 180px; }
-    .site-title { font-size: 18px; font-weight: 400; margin: 0 0 18px 0; }
-    .nav a { display: block; margin: 0 0 14px 0; text-decoration: underline; }
-    .content { width: 760px; max-width: 760px; padding-top: 4px; }
-    h1 { font-size: 20px; line-height: 1.25; font-weight: 700; margin: 0 0 24px 0; }
-    p { margin: 0 0 16px 0; }
-  </style>
+  <title>About — Aditya Anand</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="layout">
-    <nav class="nav" aria-label="Primary">
-      <div class="site-title">Aditya Anand</div>
+    <div class="nav">
+      <a class="site-name" href="index.html">Aditya Anand</a>
       <a href="about.html">About</a>
       <a href="research.html">Research</a>
       <a href="publications.html">Publications</a>
       <a href="media.html">Media</a>
       <a href="creative.html">Creative</a>
-      <a href="advice.html">Advice</a>
-    </nav>
-    <main class="content">
-      <h1>About</h1>
-      <p>I am a molecular immunologist and cell biologist working at the intersection of mechanism, perturbation, and biological interpretation.</p>
-      <p>My training has centered on stress signaling, host-pathogen interactions, and how cells respond to perturbations across scales, from structural mechanism to functional screening.</p>
-      <p>I am especially interested in the problem of trust in biology: how we decide which findings are robust, which generalize, and which are artifacts of model, context, or measurement. That question has led me toward evaluation, computational thinking, and AI-enabled approaches to biological discovery.</p>
-      <p>I am based in San Francisco.</p>
-    </main>
+      <a href="cv.pdf">CV</a>
+    </div>
+    <div class="content">
+      <img class="profile-photo" src="profile.jpg" alt="Aditya Anand" />
+      <p>I'm a molecular immunologist and cell biologist based in San Francisco.</p>
+      <p>My scientific work has centered on immunity, protein regulation, and host-pathogen interactions. More recently, I've become interested in AI for biology: not only as a way to study mechanistic questions, but as a way to build better tools for learning, discovery, and scientific reasoning.</p>
+      <p>Outside of research, I spend time on photography and related creative projects.</p>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <h2>Current interests</h2>
+      <ul>
+        <li><strong>AI for biology.</strong> Using machine learning to study mechanistic biology and build better scientific tools.</li>
+        <li><strong>Protein regulation.</strong> Questions around signaling, ubiquitin systems, and how cellular states are controlled.</li>
+        <li><strong>Host-pathogen interactions.</strong> How pathogens interface with and exploit cellular systems.</li>
+        <li><strong>Scientific learning.</strong> Making complex biological ideas more legible, teachable, and accessible.</li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
