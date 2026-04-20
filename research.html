@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Aditya Anand</title>
+
+  <style>
+    body {
+      margin: 40px;
+      font-family: Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111;
+      line-height: 1.45;
+    }
+
+    .layout {
+      display: flex;
+      gap: 80px;
+      align-items: flex-start;
+      max-width: 1200px;
+    }
+
+    .nav {
+      width: 180px;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .nav strong {
+      display: block;
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .nav a {
+      display: block;
+      color: #0645ad;
+      text-decoration: underline;
+      margin-bottom: 8px;
+    }
+
+    .content {
+      max-width: 680px;
+      font-size: 14px;
+    }
+
+    .content h1 {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0 0 16px 0;
+    }
+
+    .content p {
+      margin: 0 0 16px 0;
+    }
+
+    .content ul {
+      margin: 0 0 18px 20px;
+      padding: 0;
+    }
+
+    .content li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .layout {
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .nav {
+        width: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout">
+    <div class="nav">
+      <strong>Aditya Anand</strong>
+      <a href="/about">About</a>
+      <a href="/research">Research</a>
+      <a href="/publications">Publications</a>
+      <a href="/media">Media</a>
+      <a href="/creative">Creative</a>
+      <a href="#">CV</a>
+    </div>
+
+    <div class="content">
+      <h1>Research</h1>
+
+      <p>
+        My work sits at the intersection of mechanistic biology, scientific evaluation, and AI-enabled discovery.
+      </p>
+
+      <p>
+        I’m interested in how AI can become genuinely useful in biology, not only by generating plausible predictions,
+        but by helping researchers reason more clearly about complex, context-dependent systems. In practice, this means
+        building better ways to evaluate biological hypotheses, identify failure modes, and distinguish signals that are
+        merely suggestive from those that are likely to hold up experimentally.
+      </p>
+
+      <p>
+        My scientific background is in immunity, protein regulation, and host-pathogen interactions. At Genentech, I have
+        worked on endosomal escape, therapeutic delivery, and bacterial effector biology, combining CRISPR screening,
+        proteomics, literature synthesis, and experimental validation to resolve mechanistic questions that are difficult
+        to answer from any single dataset alone.
+      </p>
+
+      <p>
+        A recurring theme in my work is that biological systems are highly context-dependent, and that useful evaluation
+        frameworks need to capture this. Independent screens and datasets often disagree for reasons that are easy to
+        dismiss as “cell type-specific,” but in many cases the real explanation is more subtle: hidden differences in
+        assay design, cargo, metabolic state, or cellular context.
+      </p>
+
+      <p>
+        Earlier in my career, I worked on the integrated stress response and helped determine structural mechanisms
+        underlying eIF2B regulation and targeting by ISRIB, including two first-author Science papers.
+      </p>
+
+      <p>
+        Broadly, I’m interested in three kinds of questions:
+      </p>
+
+      <ul>
+        <li><strong>AI for mechanistic biology.</strong> How can machine learning help generate, refine, and evaluate mechanistic hypotheses in cellular systems?</li>
+        <li><strong>Evaluation in biological discovery.</strong> What makes an AI prediction biologically meaningful, plausible, and worth experimental follow-up?</li>
+        <li><strong>Scientific tools and accessibility.</strong> How can better interfaces, representations, and workflows make biological reasoning more legible and more widely accessible?</li>
+      </ul>
+
+      <p>
+        I also led Genentech’s Computational Biology Postdoc Club for two years, where I became increasingly interested
+        in the gap between what AI tools can do in principle and what biologists can responsibly trust in practice.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
