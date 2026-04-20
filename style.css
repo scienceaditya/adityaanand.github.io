@@ -1,0 +1,129 @@
+/* ============================================
+   adityaanand.org — shared stylesheet
+   One file. Every page uses this.
+   ============================================ */
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 48px 40px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #111;
+  background: #fff;
+}
+
+/* --- Layout --- */
+.layout {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  max-width: 900px;
+}
+
+/* --- Nav --- */
+.nav {
+  width: 160px;
+  flex-shrink: 0;
+}
+
+.nav .site-name {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #111;
+  text-decoration: none;
+}
+
+.nav a {
+  display: block;
+  color: #0645ad;
+  text-decoration: none;
+  margin-bottom: 9px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Content --- */
+.content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.content h1 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.content h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 24px 0 10px 0;
+}
+
+.content p {
+  margin: 0 0 16px 0;
+}
+
+.content ul,
+.content ol {
+  margin: 0 0 16px 0;
+  padding-left: 20px;
+}
+
+.content li {
+  margin-bottom: 12px;
+}
+
+.content a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* --- Profile photo (about page) --- */
+.profile-photo {
+  width: 140px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* --- Publications note --- */
+.note {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* --- Mobile --- */
+@media (max-width: 680px) {
+  body {
+    padding: 32px 24px;
+  }
+
+  .layout {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .nav {
+    width: auto;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}
