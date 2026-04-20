@@ -6,21 +6,32 @@
   <title>Creative · Aditya Anand</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .creative-layout {
-      display: flex;
-      flex-direction: column;
-    }
-
     body {
       padding: 0;
+      overflow: hidden;
+      height: 100vh;
     }
-    
+
+    .creative-page {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .creative-nav {
+      width: 200px;
+      flex-shrink: 0;
+      padding: 48px 40px;
+    }
+
     .scroll-container {
+      flex: 1;
       display: flex;
       flex-direction: row;
       overflow-x: auto;
-      height: 80vh;
-      gap: 0;
+      overflow-y: hidden;
+      height: 100vh;
       scrollbar-width: none;
     }
 
@@ -38,7 +49,7 @@
 
     .poem-card {
       height: 100%;
-      width: 400px;
+      width: 380px;
       flex-shrink: 0;
       background: #fff;
       display: flex;
@@ -48,18 +59,16 @@
       box-sizing: border-box;
     }
 
-    .poem-card .poem-date {
+    .poem-date {
       font-size: 13px;
       color: #888;
-      margin-bottom: 20px;
-      font-family: Helvetica, Arial, sans-serif;
+      margin-bottom: 16px;
     }
 
-    .poem-card .poem-title {
+    .poem-title {
       font-size: 15px;
       font-weight: 700;
       margin-bottom: 24px;
-      font-family: Helvetica, Arial, sans-serif;
       color: #111;
     }
 
@@ -67,62 +76,49 @@
       font-size: 14px;
       line-height: 1.75;
       color: #111;
-      font-family: Helvetica, Arial, sans-serif;
       margin: 0 0 16px 0;
     }
 
-    .creative-nav {
-      padding: 48px 40px 24px 40px;
-    }
-
-    .creative-nav .nav {
-      width: 160px;
-    }
-
     .copyright {
-      padding: 24px 40px;
+      position: fixed;
+      bottom: 24px;
+      left: 40px;
       font-size: 12px;
-      color: #888;
-      font-family: Helvetica, Arial, sans-serif;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <div class="creative-layout">
+  <div class="creative-page">
 
-    <div class="creative-nav">
-      <div class="nav">
-        <a class="site-name" href="index.html">Aditya Anand</a>
-        <a href="about.html">About</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="media.html">Media</a>
-        <a href="creative.html">Creative</a>
-        <a href="advice.html">Advice</a>
-      </div>
+    <div class="creative-nav nav">
+      <a class="site-name" href="index.html">Aditya Anand</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="media.html">Media</a>
+      <a href="creative.html">Creative</a>
+      <a href="advice.html">Advice</a>
     </div>
 
     <div class="scroll-container">
-
       <img src="shibuyacrossing1.jpeg" alt="Shibuya Crossing" />
-
       <div class="poem-card">
         <div class="poem-date">26/04/07</div>
-        <div class="poem-title">Artemis II</div>
+        <div class="poem-title">Lunar Pizza</div>
         <p>When the moon hits your eye like a big pizza pie, do you feel the urge to fly out and take a closer look at that white mottled orb suspended in the night sky, to descend into its valleys and frost-bitten craters where even atmosphere can barely cling?</p>
         <p>Would you loose yourself like an arrow from Artemis's bow, surrendering to the pull of gravity, at the hand of fate, hoping to glimpse something new on the far side of the moon, kept hidden from us since the beginning?</p>
         <p>And when you meet that unseen patch of moon, would it feel like discovery, or would it feel like coming home, to a radiant absence, as if you had been missing it without knowing: the other half of Earth, broken from our planet by an ancient collision, drifting into space only to be caught in our orbit?</p>
         <p>Do you imagine what it was like then, when we were one body, sailing across the Sea of Serenity, skipping stones across the Orientale Basin four billion years ago?</p>
       </div>
-
       <img src="banff1.jpeg" alt="Banff" />
       <img src="foxes1.jpeg" alt="Foxes" />
       <img src="puffin1.jpeg" alt="Puffin" />
-
     </div>
 
-    <div class="copyright">© Aditya Anand</div>
-
   </div>
+
+  <div class="copyright">© Aditya Anand</div>
+
 </body>
 </html>
