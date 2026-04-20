@@ -13,14 +13,19 @@
       color: #111;
     }
 
+    .layout {
+      display: flex;
+      gap: 80px; /* controls space between nav and empty content area */
+    }
+
     .nav {
-      font-size: 14px;
       width: 180px;
+      font-size: 14px;
     }
 
     .nav strong {
       display: block;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       font-weight: 500;
     }
 
@@ -28,22 +33,32 @@
       display: block;
       color: #0645ad;
       text-decoration: underline;
-      margin-bottom: 6px;
+      margin-bottom: 8px; /* more breathing room */
+    }
+
+    .spacer {
+      flex: 1; /* creates empty right-side space */
     }
   </style>
 </head>
 
 <body>
 
-  <div class="nav">
-    <strong>Aditya Anand</strong>
+  <div class="layout">
 
-    <a href="about.html">About</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="media.html">Media</a>
-    <a href="creative.html">Creative</a>
-    <a href="#">CV</a>
+    <div class="nav">
+      <strong>Aditya Anand</strong>
+
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="media.html">Media</a>
+      <a href="creative.html">Creative</a>
+      <a href="#">CV</a>
+    </div>
+
+    <div class="spacer"></div>
+
   </div>
 
 </body>
