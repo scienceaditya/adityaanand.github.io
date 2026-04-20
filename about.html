@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Aditya Anand</title>
+
+  <style>
+    body {
+      margin: 40px;
+      font-family: Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111;
+      line-height: 1.45;
+    }
+
+    .layout {
+      display: flex;
+      gap: 80px;
+      align-items: flex-start;
+      max-width: 1200px;
+    }
+
+    .nav {
+      width: 180px;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .nav strong {
+      display: block;
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .nav a {
+      display: block;
+      color: #0645ad;
+      text-decoration: underline;
+      margin-bottom: 8px;
+    }
+
+    .content {
+      max-width: 640px;
+      font-size: 14px;
+    }
+
+    .content img {
+      width: 125px;
+      height: auto;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    .content p {
+      margin: 0 0 16px 0;
+    }
+
+    .content h2 {
+      font-size: 14px;
+      margin: 22px 0 8px 0;
+      font-weight: 700;
+    }
+
+    .content ul {
+      margin: 0 0 18px 20px;
+      padding: 0;
+    }
+
+    .content li {
+      margin-bottom: 10px;
+    }
+
+    .content a {
+      color: #0645ad;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .layout {
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .nav {
+        width: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout">
+    <div class="nav">
+      <strong>Aditya Anand</strong>
+      <a href="/about">About</a>
+      <a href="/research">Research</a>
+      <a href="/publications">Publications</a>
+      <a href="/media">Media</a>
+      <a href="/creative">Creative</a>
+      <a href="#">CV</a>
+    </div>
+
+    <div class="content">
+      <img src="profile-2.jpg" alt="Aditya Anand" />
+
+      <p>
+        I’m a molecular immunologist and cell biologist based in San Francisco.
+      </p>
+
+      <p>
+        My scientific work has centered on immunity, protein regulation, and host-pathogen interactions.
+        More recently, I’ve become interested in AI for biology: not only as a way to study mechanistic
+        questions, but as a way to build better tools for learning, discovery, and scientific reasoning.
+      </p>
+
+      <p>
+        Outside of research, I spend time on photography and related creative projects.
+      </p>
+
+      <p>
+        Email: <a href="mailto:youremail@example.com">youremail@example.com</a>
+      </p>
+
+      <h2>Current interests</h2>
+
+      <ul>
+        <li><strong>AI for biology.</strong> Using machine learning to study mechanistic biology and build better scientific tools.</li>
+        <li><strong>Protein regulation.</strong> Questions around signaling, ubiquitin systems, and how cellular states are controlled.</li>
+        <li><strong>Host-pathogen interactions.</strong> How pathogens interface with and exploit cellular systems.</li>
+        <li><strong>Scientific learning.</strong> Making complex biological ideas more legible, teachable, and accessible.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
