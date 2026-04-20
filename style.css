@@ -95,7 +95,7 @@ body {
 
 /* --- Profile photo (about page) --- */
 .profile-photo {
-  width: 100%;
+  width: 280px;
   height: auto;
   display: block;
   margin-bottom: 20px;
