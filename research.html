@@ -3,140 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research — Aditya Anand</title>
-
+  <title>Research · Aditya Anand</title>
   <style>
-    body {
-      margin: 40px;
-      font-family: Helvetica, Arial, sans-serif;
-      background-color: #ffffff;
-      color: #111;
-      line-height: 1.45;
-    }
-
-    .layout {
-      display: flex;
-      gap: 80px;
-      align-items: flex-start;
-      max-width: 1200px;
-    }
-
-    .nav {
-      width: 180px;
-      font-size: 14px;
-      flex-shrink: 0;
-    }
-
-    .nav strong {
-      display: block;
-      margin-bottom: 14px;
-      font-weight: 500;
-    }
-
-    .nav a {
-      display: block;
-      color: #0645ad;
-      text-decoration: underline;
-      margin-bottom: 8px;
-    }
-
-    .content {
-      max-width: 680px;
-      font-size: 14px;
-    }
-
-    .content h1 {
-      font-size: 16px;
-      font-weight: 700;
-      margin: 0 0 16px 0;
-    }
-
-    .content p {
-      margin: 0 0 16px 0;
-    }
-
-    .content ul {
-      margin: 0 0 18px 20px;
-      padding: 0;
-    }
-
-    .content li {
-      margin-bottom: 10px;
-    }
-
-    @media (max-width: 900px) {
-      .layout {
-        flex-direction: column;
-        gap: 32px;
-      }
-
-      .nav {
-        width: auto;
-      }
-    }
+    body { margin: 0; padding: 36px; font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.55; color: #111; background: #fff; }
+    a { color: #0645ad; }
+    .layout { display: flex; align-items: flex-start; gap: 80px; max-width: 1200px; }
+    .nav { width: 180px; flex: 0 0 180px; }
+    .site-title { font-size: 18px; font-weight: 400; margin: 0 0 18px 0; }
+    .nav a { display: block; margin: 0 0 14px 0; text-decoration: underline; }
+    .content { width: 760px; max-width: 760px; padding-top: 4px; }
+    h1 { font-size: 20px; line-height: 1.25; font-weight: 700; margin: 0 0 24px 0; }
+    h2 { font-size: 16px; font-weight: 700; margin: 28px 0 10px 0; }
+    p { margin: 0 0 16px 0; }
   </style>
 </head>
-
 <body>
   <div class="layout">
-    <div class="nav">
-      <strong>Aditya Anand</strong>
-      <a href="/about">About</a>
-      <a href="/research">Research</a>
-      <a href="/publications">Publications</a>
-      <a href="/media">Media</a>
-      <a href="/creative">Creative</a>
-      <a href="#">CV</a>
-    </div>
-
-    <div class="content">
+    <nav class="nav" aria-label="Primary">
+      <div class="site-title">Aditya Anand</div>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="media.html">Media</a>
+      <a href="creative.html">Creative</a>
+      <a href="advice.html">Advice</a>
+    </nav>
+    <main class="content">
       <h1>Research</h1>
-
-      <p>
-        My work sits at the intersection of mechanistic biology, scientific evaluation, and AI-enabled discovery.
-      </p>
-
-      <p>
-        I’m interested in how AI can become genuinely useful in biology, not only by generating plausible predictions,
-        but by helping researchers reason more clearly about complex, context-dependent systems. In practice, this means
-        building better ways to evaluate biological hypotheses, identify failure modes, and distinguish signals that are
-        merely suggestive from those that are likely to hold up experimentally.
-      </p>
-
-      <p>
-        My scientific background is in immunity, protein regulation, and host-pathogen interactions. At Genentech, I have
-        worked on endosomal escape, therapeutic delivery, and bacterial effector biology, combining CRISPR screening,
-        proteomics, literature synthesis, and experimental validation to resolve mechanistic questions that are difficult
-        to answer from any single dataset alone.
-      </p>
-
-      <p>
-        A recurring theme in my work is that biological systems are highly context-dependent, and that useful evaluation
-        frameworks need to capture this. Independent screens and datasets often disagree for reasons that are easy to
-        dismiss as “cell type-specific,” but in many cases the real explanation is more subtle: hidden differences in
-        assay design, cargo, metabolic state, or cellular context.
-      </p>
-
-      <p>
-        Earlier in my career, I worked on the integrated stress response and helped determine structural mechanisms
-        underlying eIF2B regulation and targeting by ISRIB, including two first-author Science papers.
-      </p>
-
-      <p>
-        Broadly, I’m interested in three kinds of questions:
-      </p>
-
-      <ul>
-        <li><strong>AI for mechanistic biology.</strong> How can machine learning help generate, refine, and evaluate mechanistic hypotheses in cellular systems?</li>
-        <li><strong>Evaluation in biological discovery.</strong> What makes an AI prediction biologically meaningful, plausible, and worth experimental follow-up?</li>
-        <li><strong>Scientific tools and accessibility.</strong> How can better interfaces, representations, and workflows make biological reasoning more legible and more widely accessible?</li>
-      </ul>
-
-      <p>
-        I also led Genentech’s Computational Biology Postdoc Club for two years, where I became increasingly interested
-        in the gap between what AI tools can do in principle and what biologists can responsibly trust in practice.
-      </p>
-    </div>
+      <p>My work asks how cells sense, respond to, and are reprogrammed by perturbation. I have worked across structural biology, translational control, innate and adaptive immunity, and host-pathogen biology.</p>
+      <h2>Mechanism</h2>
+      <p>Much of my earlier work focused on the integrated stress response, including structural and mechanistic studies of eIF2B regulation and the small molecule ISRIB. That work combined structural biology with biochemical reasoning to explain how stress signaling could be modulated at the level of nucleotide exchange and allostery.</p>
+      <h2>Context dependence</h2>
+      <p>More recently, I have been interested in why biological findings often fail to cleanly transfer across systems. In endosomal escape, for example, independent CRISPR screens and decades of literature point to conflicting genes and pathways. Rather than treating those differences as noise, I am interested in formalizing when they reflect context, when they reflect assay design, and how we can tell the difference.</p>
+      <h2>Evaluation</h2>
+      <p>I am increasingly drawn to evaluation methodologies for AI-driven biological discovery. Biology is expensive to validate, highly context dependent, and full of partial ground truths. Useful AI systems in this domain will require evaluation frameworks that capture robustness, transfer, mechanistic plausibility, and experimental value, not just benchmark performance on static datasets.</p>
+      <h2>Direction</h2>
+      <p>Going forward, I am interested in building tools and frameworks that make biological inference more reliable: systems that help researchers reason across heterogeneous evidence, identify failure modes earlier, and generate predictions biologists can trust.</p>
+    </main>
   </div>
 </body>
 </html>

@@ -4,62 +4,73 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aditya Anand</title>
-
   <style>
     body {
-      margin: 40px;
+      margin: 0;
+      padding: 36px;
       font-family: Helvetica, Arial, sans-serif;
-      background-color: #ffffff;
+      font-size: 16px;
+      line-height: 1.45;
       color: #111;
+      background: #fff;
     }
-
+    a { color: #0645ad; }
     .layout {
       display: flex;
-      gap: 80px; /* controls space between nav and empty content area */
+      align-items: flex-start;
+      gap: 80px;
+      max-width: 1200px;
     }
-
     .nav {
       width: 180px;
-      font-size: 14px;
+      flex: 0 0 180px;
     }
-
-    .nav strong {
-      display: block;
-      margin-bottom: 14px;
-      font-weight: 500;
+    .site-title {
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0 0 18px 0;
     }
-
     .nav a {
       display: block;
-      color: #0645ad;
+      margin: 0 0 14px 0;
       text-decoration: underline;
-      margin-bottom: 8px; /* more breathing room */
     }
-
-    .spacer {
-      flex: 1; /* creates empty right-side space */
+    .content {
+      width: 760px;
+      max-width: 760px;
+      padding-top: 4px;
+    }
+    h1 {
+      font-size: 20px;
+      line-height: 1.25;
+      font-weight: 700;
+      margin: 0;
+    }
+    p {
+      margin: 0 0 16px 0;
+    }
+    .home-note {
+      max-width: 560px;
+      margin-top: 4px;
     }
   </style>
 </head>
-
 <body>
-
   <div class="layout">
-
-    <div class="nav">
-      <strong>Aditya Anand</strong>
-
+    <nav class="nav" aria-label="Primary">
+      <div class="site-title">Aditya Anand</div>
       <a href="about.html">About</a>
       <a href="research.html">Research</a>
       <a href="publications.html">Publications</a>
       <a href="media.html">Media</a>
       <a href="creative.html">Creative</a>
-      <a href="#">CV</a>
-    </div>
-
-    <div class="spacer"></div>
-
+      <a href="advice.html">Advice</a>
+    </nav>
+    <main class="content">
+      <p class="home-note">
+        Molecular immunologist and cell biologist interested in mechanism, evaluation, and AI-enabled biological discovery.
+      </p>
+    </main>
   </div>
-
 </body>
 </html>
